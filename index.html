@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html><html lang="en"><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#000000">
+        <meta name="description" content="A product of emergent.sh">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='0' y='14' font-size='14'%3E%E2%98%85%3C/text%3E%3C/svg%3E">
+        <!--
+        manifest.json provides metadata used when your web app is installed on a
+        user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+        -->
+        <!--
+        Notice the use of  in the tags above.
+        It will be replaced with the URL of the `public` folder during the build.
+        Only files inside the `public` folder can be referenced from the HTML.
+
+        Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+        work correctly both with client-side routing and a non-root public URL.
+        Learn how to configure a non-root public URL by running `npm run build`.
+        -->
+        <title>Fullstack App</title>
+        <style>
+          .cssload-main {
+            position: relative;
+            margin: 2rem auto 0;
+            width: max-content;
+            padding: 0.9rem 1.1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+            background: rgba(255,166,201,0.12);
+            border-radius: 1rem;
+          }
+
+          .cssload-heart {
+            animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite;
+            width: 48px;
+            height: 48px;
+            display: grid;
+            place-items: center;
+            background: rgba(255,255,255,0.9);
+            border-radius: 999px;
+            position: relative;
+          }
+
+          .cssload-heartL,
+          .cssload-heartR,
+          .cssload-square {
+            position: absolute;
+            display: block;
+            background-color: rgb(252, 0, 101);
+          }
+
+          .cssload-heartL {
+            width: 12px;
+            height: 24px;
+            border-radius: 12px 12px 0 0;
+            transform: translate(-28px, -27px);
+            animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite;
+          }
+
+          .cssload-heartR {
+            width: 12px;
+            height: 24px;
+            border-radius: 12px 12px 0 0;
+            transform: translate(28px, -27px);
+            animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite;
+          }
+
+          .cssload-square {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+            transform: scale(1) rotate(-45deg);
+            animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite;
+          }
+
+          .cssload-shadow {
+            width: 84px;
+            height: 8px;
+            background-color: rgba(215, 215, 215, 0.8);
+            border-radius: 999px;
+            margin-top: 1rem;
+            animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite;
+          }
+
+          @keyframes cssload-square {
+            50% { border-radius: 100%; transform: scale(0.5) rotate(-45deg); }
+            100% { transform: scale(1) rotate(-45deg); }
+          }
+
+          @keyframes cssload-heart {
+            50% { transform: rotate(360deg); }
+            100% { transform: rotate(720deg); }
+          }
+
+          @keyframes cssload-heartL {
+            60% { transform: translate(-28px, -27px) scale(0.4); }
+          }
+
+          @keyframes cssload-heartR {
+            40% { transform: translate(28px, -27px) scale(0.4); }
+          }
+
+          @keyframes cssload-shadow {
+            50% { transform: scale(0.5); border-color: rgb(228, 228, 228); }
+          }
+        </style>
+        <script>window.addEventListener("error",function(e){if(e.error instanceof DOMException&&e.error.name==="DataCloneError"&&e.message&&e.message.includes("PerformanceServerTiming")){e.stopImmediatePropagation();e.preventDefault()}},true);</script>
+        <script defer="" src="js/ThlkqDByQtgv.js"></script>
+</head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+        <div class="cssload-main" id="static-loader">
+          <div class="cssload-heart">
+            <span class="cssload-heartL"></span>
+            <span class="cssload-heartR"></span>
+            <span class="cssload-square"></span>
+          </div>
+          <div class="cssload-shadow"></div>
+        </div>
+        <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body></html>
